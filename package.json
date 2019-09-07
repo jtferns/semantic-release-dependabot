@@ -11,5 +11,11 @@
   "dependencies": {
     "@semantic-release/error": "^2.2.0",
     "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^15.13.24"
+  },
+  "peerDependencies": {
+    "semantic-release": ">=15.0.0 <16.0.0"
   }
 }
