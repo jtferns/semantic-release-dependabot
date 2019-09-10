@@ -17,7 +17,8 @@ jobs:
         with:
           node-version: 12
       - run: npm ci
-      - run: npm test
+      # skip tests until we add some!
+      # - run: npm test
 
   publish-npm:
     needs: build
