@@ -1,9 +1,9 @@
 name: Node.js Package
 
 on:
-#   pull_request:
-#     branches:
-#       - master
+  #   pull_request:
+  #     branches:
+  #       - master
   push:
     branches:
       - master
@@ -31,9 +31,8 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npx semantic-release
         env:
-          NPM_TOKEN: ${{secrets.npm_token}}
-          GH_TOKEN: ${{secrets.gh_token}}
-
+          NPM_TOKEN: ${{ secrets.npm_token_2 }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 #   publish-gpr:
 #     needs: build
 #     runs-on: ubuntu-latest
