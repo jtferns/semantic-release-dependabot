@@ -32,7 +32,7 @@ jobs:
       - run: npx semantic-release
         env:
           NPM_TOKEN: ${{ secrets.npm_token_2 }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.gh_token }}
 #   publish-gpr:
 #     needs: build
 #     runs-on: ubuntu-latest
