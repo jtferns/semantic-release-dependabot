@@ -31,7 +31,8 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npx semantic-release
         env:
-          NPM_TOKEN: ${{ secrets.npm_token_2 }}
+          NODE_AUTH_TOKEN: ${{ secrets.npm_token_3 }}
+          NPM_TOKEN: ${{ secrets.npm_token_3 }}
           GH_TOKEN: ${{ secrets.gh_token }}
 #   publish-gpr:
 #     needs: build
